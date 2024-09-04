@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	border: 0;
+	clip: rect(0 0 0 0);
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 1.6rem;
+}
+
+:root {
+    --main-color:#000000;
+    --point-color: #D97652;
+    --body-color :#F2E9D8;
+    --sub-color : #FFFFFF;
+}
+
+/*데스크탑*/
+
+.moblieOnly {
+    display: none;
+}
+
+
+.body-top {
+    background-color: var(--body-color);
+    width: 192rem;
+    height: 90.2rem;
+    background-image: url(/img-2/box-cat.png);
+    background-repeat: no-repeat;
+    background-position: 128rem 13.4rem /*임의로 지정*/
+}
+
+
+header {
+    display: flex;
+    gap: 75.6rem;
+    align-items: center;
+    padding-top: 3.1rem;
+    padding-left: 32rem;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+header nav ul li a button {
+    margin-left: 1rem;
+    background-color: var(--point-color);
+    border-radius: 4rem;
+    width: 14rem;
+    height: 5rem;
+    color: var(--sub-color);
+    font-weight: bold;
+}
+
+.section1 h2 {
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+
+.section1 p {
+    line-height: 1.25;
+}
+
+.section1 a button {
+    background-color: var(--point-color);
+    width: 14rem;
+    height: 5rem;
+    border-radius: 4rem;
+    color: var(--sub-color);
+    font-weight: bold;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 20rem;
+    margin-left: 32rem;
+}
+
+
+.section2 {
+    display: flex;
+    gap: 11rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-left: 32rem;
+}
+
+
+.section2 .main-cat {
+    width: 66rem;
+    height: 39rem;
+    border-radius: 3rem;
+    box-shadow: 1rem 1rem 3rem 0 rgba(0, 0, 0, 25%);
+    background-image: url(/img-2/img_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -8rem;
+}
+
+.section2 .content {
+    margin-left: 11rem;
+}
+
+.section2 .content h2 {
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+.section2 .content p {
+    line-height: 1.25;
+    margin-top: 3rem;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+    text-align: center;
+    margin-left: 32rem;
+}
+
+.section3 h2 {
+    font-size: 4.8rem;
+    color: var(--point-color);
+    font-weight: bold;
+}
+
+.section3 p {
+    line-height: 1.25;
+    margin-top: 4rem;
+}
+
+.section3 ul {
+    display: flex;
+    gap: 7.2rem;
+    margin-top: 8.8rem;
+}
+
+.section3 ul li div {
+    width: 37.8rem;
+    height: 37.8rem;
+    border-radius: 3rem;
+    box-shadow: 1rem 1rem 3rem 0 rgba(0, 0, 0, 25%);
+    transform: rotate(-90deg); /*box-shadow 주축 변경하기*/
+}
+
+.section3 .cat1 {
+    background-image: url(/img-2/img_1.jpg);
+    background-size: cover;
+}
+.section3 .cat2 {
+    background-image: url(/img-2/img_2.jpg);
+    background-size: cover;
+}
+.section3 .cat3 {
+    background-image: url(/img-2/img_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*사이즈 재조정하기*/
+}
+
+.section4 {
+    display: flex;
+    gap: 5.2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9rem;
+}
+
+.section4 p {
+    line-height: 1.25;
+}
+
+.section4 a {
+    background-color: var(--point-color);
+    width: 14.7rem;
+    height: 5rem;
+    border-radius: 4rem;
+    color: var(--sub-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe {
+    background-color: #263140;
+    width: 128rem;
+    height: 20rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 9rem;
+    margin-left: 32rem;
+}
+
+
+.subscribe h2 {
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: var(--sub-color);
+}
+
+.subscribe p {
+    font-size: 1.4rem;
+    color: #F2E9D8;
+    line-height: 1.25;
+    margin-top: 1.8rem;
+}
+
+.subscribe input {
+    background-color: var(--sub-color);
+    width: 53rem;
+    height: 6rem;
+    border-radius: 6rem;
+    margin-left: 14.3rem ;
+}
+
+.subscribe input::placeholder {
+    color: #767676;
+    padding-left: 6.8rem ;
+    background-image: url(/img-2/mail.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 3rem center ;
+}
+
+.subscribe button {
+    background-color: var(--point-color);
+    width: 13.6rem;
+    height: 5rem;
+    border-radius: 4rem;
+    color: var(--sub-color);
+    font-weight: bold;
+    position: absolute;
+    right: 6.3rem;
+
+}
+
+footer .background {
+    width: 192rem;
+    height: 50rem;
+    position: absolute;
+    top: 244rem;
+    z-index: -1;
+    background-color: #F2E9D899;
+}
+
+footer .background .rotated-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img-2/img_5.jpg);
+    background-size: cover;
+    background-position: right -60rem;
+    opacity: 60%;
+}
+
+
+footer .info {
+    display: flex;
+    background-color: var(--sub-color);
+    width: 192rem;
+    height: 16rem;
+    align-items: center;
+    justify-content: center;
+    gap: 82.5rem;
+    position: relative;
+    top: 23rem;
+}
+
+footer section ul li div{
+    background-color: var(--point-color);
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+footer section ul {
+    display: flex;
+    gap: 2rem;
+}
+
+
+footer .info > img {
+    width: 22.6rem;
+    height: 7rem;
+}
+
+footer .top-btn-back {
+    background-color: #FFFFFF;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20rem;
+    left: 185rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*모바일*/
+@media (max-width: 390px){
+    .pcOnly {
+        display: none;
+    }
+    
+    .moblieOnly {
+        display: "";
+    }
+}
