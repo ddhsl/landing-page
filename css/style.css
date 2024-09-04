@@ -23,6 +23,7 @@ html {
 body {
     font-family: 'SpoqaHanSansNeo-Regular';
     font-size: 1.6rem;
+    width: 192rem;
 }
 
 :root {
@@ -34,7 +35,7 @@ body {
 
 /*데스크탑*/
 
-.moblieOnly {
+.mobileOnly {
     display: none;
 }
 
@@ -45,7 +46,7 @@ body {
     height: 90.2rem;
     background-image: url(/img-2/box-cat.png);
     background-repeat: no-repeat;
-    background-position: 128rem 13.4rem /*임의로 지정*/
+    background-position: 118rem 13.4rem /*임의로 지정*/
 }
 
 
@@ -53,8 +54,14 @@ header {
     display: flex;
     gap: 75.6rem;
     align-items: center;
-    padding-top: 3.1rem;
-    padding-left: 32rem;
+    justify-content: center;
+    width: 192rem;
+    height: 10.2rem;
+}
+
+header h1 img {
+    width:  13rem;
+    height: 4rem;
 }
 
 header nav ul {
@@ -102,11 +109,10 @@ header nav ul li a button {
 
 .section2 {
     display: flex;
-    gap: 11rem;
     align-items: center;
     justify-content: center;
+    width: 192rem;
     margin-top: 8rem;
-    margin-left: 32rem;
 }
 
 
@@ -141,9 +147,9 @@ header nav ul li a button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 192rem;
     margin-top: 12rem;
     text-align: center;
-    margin-left: 32rem;
 }
 
 .section3 h2 {
@@ -155,6 +161,11 @@ header nav ul li a button {
 .section3 p {
     line-height: 1.25;
     margin-top: 4rem;
+}
+
+.section3 p span {
+    color: var(--point-color);
+    font-weight: bold;
 }
 
 .section3 ul {
@@ -190,6 +201,7 @@ header nav ul li a button {
     gap: 5.2rem;
     align-items: center;
     justify-content: center;
+    width: 192rem;
     margin-top: 9rem;
 }
 
@@ -284,7 +296,7 @@ footer .background .rotated-img {
 }
 
 
-footer .info {
+footer .info section{
     display: flex;
     background-color: var(--sub-color);
     width: 192rem;
@@ -312,7 +324,7 @@ footer section ul {
 }
 
 
-footer .info > img {
+footer .info section > img {
     width: 22.6rem;
     height: 7rem;
 }
@@ -331,11 +343,13 @@ footer .top-btn-back {
 
 }
 
+footer .top-btn-back a img:hover {
+    filter: invert(49%) sepia(12%) saturate(5%) hue-rotate(51deg) brightness(91%) contrast(81%);
+}
 
-
-
-
-
+footer .top-btn-back:hover {
+    border: 1px solid #767676;
+}
 
 
 
@@ -348,7 +362,238 @@ footer .top-btn-back {
         display: none;
     }
     
-    .moblieOnly {
-        display: "";
+    .mobileOnly {
+        display: block;
     }
+    body {
+        width: 39rem;
+    }
+    .body-top {
+        width: 39rem;
+        height: 80rem;
+        background-image: url(/img-2/box-cat.png);
+        background-repeat: no-repeat;
+        background-size: 19.7rem 42.2rem;
+        background-position: 50% 120%;
+        
+    }
+    
+    header h1 img {
+        width:  9.2rem;
+        height: 2.8rem;
+        
+    }
+    
+    header {
+        display: flex;
+        gap: 22.6rem;
+        align-items: center;
+        width: 39rem;
+        height: 7.6rem;
+    }
+
+    header nav a {
+        width: 3.2rem;
+        height: 3.2rem;
+        z-index: 1;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 4rem;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 39rem;
+    }
+
+    .section1 h2 {
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+    
+    .section1 p {
+        font-size: 1.4rem;
+        line-height: 1.25;
+    }
+    
+    .section1 a button {
+        width: 11.9rem;
+        height: 4rem;
+        border-radius: 4rem;
+    }
+    
+    
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+        width: 39rem;
+    }
+    
+    
+    .section2 .main-cat {
+        width: 32.6rem;
+        height: 19rem;
+        border-radius: 1.8rem;
+        background-position: center -4rem;
+    }
+    
+    .section2 .content h2 {
+        font-size: 2.4rem;
+    }
+    
+    .section2 .content p {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+    }
+
+    .section2 .content {
+        margin-left: 0;
+    }
+    
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem;
+        text-align: center;
+        width: 39rem;
+    }
+    
+    .section3 h2 {
+        font-size: 2.4rem;
+    }
+    
+    .section3 p {
+        margin-top: 3rem;
+    }
+    
+    .section3 ul {
+        display: flex;
+        gap: 2rem;
+        margin-top: 4rem;
+    }
+    
+    .section3 ul li div {
+        width: 26rem;
+        height: 26rem;
+        border-radius: 1.8rem;
+        position: relative;
+        left: 25rem;
+    }
+    
+    .section4 {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6rem;
+        width: 39rem;
+    }
+    
+    .section4 a {
+        width: 12.6rem;
+        height: 4rem;
+        border-radius: 4rem;
+        font-size: 1.4rem;
+        position: relative;
+        left: 10rem;
+    }
+    
+    .subscribe {
+        width: 32.6rem;
+        height: 34.8rem;
+        border-radius: 3rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 5rem;
+        margin-left: 3.2rem;
+        justify-content:flex-start;
+    }
+
+
+    .subscribe h2 {
+        font-size: 2.4rem;
+        padding-top: 3.6rem;
+        line-height: 1.25;
+    }
+    
+    .subscribe p {
+        margin-top: 2rem;
+    }
+    
+    .subscribe input {
+        width: 26.2rem;
+        height: 4rem;
+        border-radius: 6rem;
+        margin-top: 3rem;
+        margin-left: 0;
+        
+    }
+    
+
+    .subscribe button {
+        width: 11.7rem;
+        height: 4rem;
+        position: relative;
+        left: 8rem;
+        top: 2.7rem;
+
+    }
+    
+    footer .background {
+        width: 39rem;
+        height: 24rem;
+        position: absolute;
+        top: 235rem;
+    }
+    
+    footer .background .rotated-img {
+        background-position: right -43rem;
+    }
+
+    footer .info section > img {
+        width: 11.2rem;
+        height: 3.4rem;
+    }
+    
+    
+    footer .info section:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        width: 39rem;
+        gap: 5.8rem;
+        align-items: flex-start;
+        margin-left: 2rem;
+    }
+
+    
+    .details{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        text-align: right;
+        color: #767676;
+        font-size: 1.4rem;
+        margin-left: 2rem;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
+
+    
