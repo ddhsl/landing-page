@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            font-family: 'SpoqaHanSansNeo-Regular';
+            font-size: 1.6rem;
+        }
+
+        :root {
+            --main-color:#000000;
+            --point-color: #D97652;
+            --body-color :#F2E9D8;
+            --sub-color : #FFFFFF;
+        }
+
+        .container {
+            width: 39rem;
+            height: 82rem;
+            background-color: var(--sub-color);
+        }
+        .list {
+            background-color:#263140 ;
+            width: 28.9rem;
+            height: 82rem;
+            position: absolute;
+            left: 10.1rem;
+            color: var(--sub-color);
+            background-image: url(/img/arrow-right.svg);
+            background-repeat: no-repeat;
+            background-position: 2rem 2.2rem;
+        }
+
+        .list ul {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem ;
+            margin-left: 5rem;
+            margin-top: 12rem;
+        }
+
+        .list .close button {
+            background-color: var(--point-color);
+            color: var(--sub-color);
+            font-weight: bold;
+            width: 11.9rem;
+            height: 4rem;
+            border-radius: 4rem;
+            margin-top: 5rem;
+            margin-left: 4rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="list">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+            </ul>
+            <a href="#" class="close">
+                <button type="button">Download</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
