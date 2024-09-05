@@ -23,7 +23,7 @@ html {
 body {
     font-family: 'SpoqaHanSansNeo-Regular';
     font-size: 1.6rem;
-    width: 192rem;
+    /* width: 192rem; */
 }
 
 :root {
@@ -42,21 +42,26 @@ body {
 
 .body-top {
     background-color: var(--body-color);
+    display: flex;
     width: 192rem;
-    height: 90.2rem;
+    height: 80rem;
     background-image: url(/img/box-cat.png);
     background-repeat: no-repeat;
-    background-position: 118rem 13.4rem /*임의로 지정*/
+    background-position: 118rem 13.4rem 
 }
 
 
 header {
+    background-color: var(--body-color);
     display: flex;
     gap: 75.6rem;
     align-items: center;
     justify-content: center;
     width: 192rem;
     height: 10.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 header h1 img {
@@ -352,12 +357,54 @@ footer .top-btn-back:hover {
 }
 
 
+/*모달창-데스크탑*/
 
+.modal {
+    width: 60rem;
+    height: 40rem;
+    border-radius: 3rem;
+    box-shadow: 0 0 3rem 0  rgba(0, 0, 0, 20%);
+    background-image: url(/img/modal-bg-img.png);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 300rem; /*JS 적용 전, 임의로 위치 시킴*/
+    margin-left: 20rem;
+}
+
+.modal h2 {
+    color: var(--point-color);
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+.modal p {
+    font-size: 1.4rem;
+    margin-bottom: 3.8rem;
+}
+.modal button {
+    background-color: var(--point-color);
+    width: 18.9rem;
+    height: 5rem;
+    border-radius: 4rem;
+    color: var(--sub-color);
+    font-weight: bold;
+}
+
+.modal img {
+    width: 11rem;
+    height: 11.2rem;
+    margin-bottom: 2.4rem;
+}
 
 
 
 /*모바일*/
-@media (max-width: 390px){
+@media (min-width:360px) and (max-width: 767px){
     .pcOnly {
         display: none;
     }
@@ -370,7 +417,7 @@ footer .top-btn-back:hover {
     }
     .body-top {
         width: 39rem;
-        height: 80rem;
+        height: 71.8rem;
         background-image: url(/img/box-cat.png);
         background-repeat: no-repeat;
         background-size: 19.7rem 42.2rem;
@@ -390,6 +437,9 @@ footer .top-btn-back:hover {
         align-items: center;
         width: 39rem;
         height: 7.6rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
     }
 
     header nav a {
@@ -594,6 +644,43 @@ footer .top-btn-back:hover {
         justify-content: center;
     }
 
+
+    /*모달창 - 모바일*/
+
+    .modal {
+        width: 30rem;
+        height: 30rem;
+        box-shadow: 0 0 2rem 0  rgba(0, 0, 0, 20%);
+        background-repeat: no-repeat;
+        background-color: var(--body-color);
+        position: absolute;
+        top: 290rem; /*JS 적용 전, 임의로 위치 시킴*/
+        margin-left: 5rem;
+    }
+
+    
+    .modal h2 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .modal p {
+        margin-bottom: 2.8rem;
+        line-height: 1.25;
+        text-align: center;
+    }
+
+    .modal button {
+        width: 16.3rem;
+        height: 4rem;
+    }
+
+    .modal img {
+        width: 6rem;
+        height: 6.2rem;
+    }
+
 }
+
 
     
