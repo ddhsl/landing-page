@@ -178,26 +178,11 @@ header nav ul li a button {
     margin-top: 8.8rem;
 }
 
-.section3 ul li div {
+.section3 img {
     width: 37.8rem;
     height: 37.8rem;
     border-radius: 3rem;
     box-shadow: 1rem 1rem 3rem 0 rgba(0, 0, 0, 25%);
-    transform: rotate(-90deg); /*box-shadow 주축 변경하기*/
-}
-
-.section3 .cat1 {
-    background-image: url(/img/img_1.jpg);
-    background-size: cover;
-}
-.section3 .cat2 {
-    background-image: url(/img/img_2.jpg);
-    background-size: cover;
-}
-.section3 .cat3 {
-    background-image: url(/img/img_3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
 }
 
 .section4 {
@@ -281,32 +266,30 @@ header nav ul li a button {
 
 }
 
-footer .background {
+.background {
     width: 192rem;
-    height: 50rem;
+    height: 34rem;
     position: absolute;
     top: 244rem;
     z-index: -1;
     background-color: #F2E9D899;
-}
-
-footer .background .rotated-img {
-    width: 100%;
-    height: 100%;
-    background-image: url(/img/img_5.jpg);
+        background-image: url(/img/img_5.jpg);
     background-size: cover;
     background-position: right -60rem;
     opacity: 60%;
 }
 
 
+.footer {
+    height: 16rem;
+    background-color: var(--sub-color);
+}
+
 footer .info section{
     display: flex;
-    background-color: var(--sub-color);
-    width: 192rem;
-    height: 16rem;
     align-items: center;
     justify-content: center;
+    width: 192rem;
     gap: 82.5rem;
     position: relative;
     top: 23rem;
@@ -333,7 +316,7 @@ footer .info section > img {
     height: 7rem;
 }
 
-footer .top-btn-back {
+.top-btn-back {
     background-color: #FFFFFF;
     width: 5rem;
     height: 5rem;
@@ -347,11 +330,11 @@ footer .top-btn-back {
 
 }
 
-footer .top-btn-back a img:hover {
+.top-btn-back a img:hover {
     filter: invert(49%) sepia(12%) saturate(5%) hue-rotate(51deg) brightness(91%) contrast(81%);
 }
 
-footer .top-btn-back:hover {
+.top-btn-back:hover {
     border: 1px solid #767676;
 }
 
@@ -531,7 +514,7 @@ footer .top-btn-back:hover {
         margin-top: 4rem;
     }
     
-    .section3 ul li div {
+    .section3 ul li img {
         width: 26rem;
         height: 26rem;
         border-radius: 1.8rem;
@@ -599,16 +582,25 @@ footer .top-btn-back:hover {
         top: 2.7rem;
 
     }
+
     
-    footer .background {
-        width: 39rem;
-        height: 24rem;
+    .background {
+        width: 24rem;
+        height: 55rem;
         position: absolute;
-        top: 235rem;
+        top: 220rem;
+        background-position: right 40rem;
+        background-position-x: 35rem;
+        background-size: 40rem;
+        transform: rotate(90deg);
     }
     
-    footer .background .rotated-img {
-        background-position: right -43rem;
+
+    footer {
+        position: relative;
+        bottom: 7rem;
+        width: 39rem;
+        height: 17.8rem;
     }
 
     footer .info section > img {
@@ -653,7 +645,7 @@ footer .top-btn-back:hover {
         background-repeat: no-repeat;
         background-color: var(--body-color);
         position: absolute;
-        top: 290rem; /*JS 적용 전, 임의로 위치 시킴*/
+        top: 280rem; /*JS 적용 전, 임의로 위치 시킴*/
         margin-left: 5rem;
     }
 
