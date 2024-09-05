@@ -23,7 +23,6 @@ html {
 body {
     font-family: 'SpoqaHanSansNeo-Regular';
     font-size: 1.6rem;
-    /* width: 192rem; */
 }
 
 :root {
@@ -198,7 +197,7 @@ header nav ul li a button {
 .section3 .cat3 {
     background-image: url(/img/img_3.jpg);
     background-repeat: no-repeat;
-    background-size: cover; /*사이즈 재조정하기*/
+    background-size: cover; 
 }
 
 .section4 {
