@@ -292,9 +292,9 @@ main {
 footer .info section{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100vw;
-    gap: 82.5rem;
+    gap: 10rem;
     position: relative;
     top: 23rem;
 }
