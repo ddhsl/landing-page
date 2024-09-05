@@ -23,6 +23,7 @@ html {
 body {
     font-family: 'SpoqaHanSansNeo-Regular';
     font-size: 1.6rem;
+    overflow-x: hidden;
 }
 
 :root {
@@ -42,7 +43,7 @@ body {
 .body-top {
     background-color: var(--body-color);
     display: flex;
-    width: 192rem;
+    width: 100vw;
     height: 80rem;
     background-image: url(../img/box-cat.png);
     background-repeat: no-repeat;
@@ -56,7 +57,7 @@ header {
     gap: 75.6rem;
     align-items: center;
     justify-content: center;
-    width: 192rem;
+    width: 100vw;
     height: 10.2rem;
     position: sticky;
     top: 0;
@@ -83,6 +84,18 @@ header nav ul li a button {
     color: var(--sub-color);
     font-weight: bold;
 }
+main {
+    width: 100vw;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 20rem;
+}
 
 .section1 h2 {
     font-size: 4.8rem;
@@ -102,20 +115,13 @@ header nav ul li a button {
     font-weight: bold;
 }
 
-.section1 {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    margin-top: 20rem;
-    margin-left: 32rem;
-}
+
 
 
 .section2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 192rem;
     margin-top: 8rem;
 }
 
@@ -131,9 +137,7 @@ header nav ul li a button {
     background-position: center -8rem;
 }
 
-.section2 .content {
-    margin-left: 11rem;
-}
+
 
 .section2 .content h2 {
     font-size: 3.6rem;
@@ -151,7 +155,6 @@ header nav ul li a button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 192rem;
     margin-top: 12rem;
     text-align: center;
 }
@@ -190,7 +193,6 @@ header nav ul li a button {
     gap: 5.2rem;
     align-items: center;
     justify-content: center;
-    width: 192rem;
     margin-top: 9rem;
 }
 
@@ -211,6 +213,11 @@ header nav ul li a button {
 }
 
 .subscribe {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe .sub-container {
     background-color: #263140;
     width: 128rem;
     height: 20rem;
@@ -220,7 +227,6 @@ header nav ul li a button {
     align-items: center;
     position: relative;
     margin-top: 9rem;
-    margin-left: 32rem;
 }
 
 
@@ -267,7 +273,7 @@ header nav ul li a button {
 }
 
 .background {
-    width: 192rem;
+    width: 100vw;
     height: 34rem;
     position: absolute;
     top: 244rem;
@@ -289,7 +295,7 @@ footer .info section{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 192rem;
+    width: 100vw;
     gap: 82.5rem;
     position: relative;
     top: 23rem;
@@ -386,7 +392,7 @@ footer .info section > img {
 
 
 /*모바일*/
-@media (min-width:360px) and (max-width: 767px){
+@media (max-width: 767px){
     .pcOnly {
         display: none;
     }
@@ -394,11 +400,16 @@ footer .info section > img {
     .mobileOnly {
         display: block;
     }
-    body {
-        width: 39rem;
+    .screen-box{
+        -ms-overflow-style:none; 
+        scrollbar-width:none; 
     }
+    
+    .screen-box::-webkit-scrollbar {
+        display:none; 
+    }
+
     .body-top {
-        width: 39rem;
         height: 71.8rem;
         background-image: url(../img/box-cat.png);
         background-repeat: no-repeat;
@@ -415,9 +426,9 @@ footer .info section > img {
     
     header {
         display: flex;
-        gap: 22.6rem;
+        gap: 18rem;
         align-items: center;
-        width: 39rem;
+        width: 100vw;
         height: 7.6rem;
         position: sticky;
         top: 0;
@@ -439,7 +450,6 @@ footer .info section > img {
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 39rem;
     }
 
     .section1 h2 {
@@ -466,7 +476,6 @@ footer .info section > img {
         align-items: center;
         justify-content: center;
         margin-top: 4rem;
-        width: 39rem;
     }
     
     
@@ -486,9 +495,6 @@ footer .info section > img {
         margin-top: 2rem;
     }
 
-    .section2 .content {
-        margin-left: 0;
-    }
     
     .section3 {
         display: flex;
@@ -497,7 +503,6 @@ footer .info section > img {
         align-items: center;
         margin-top: 6rem;
         text-align: center;
-        width: 39rem;
     }
     
     .section3 h2 {
@@ -512,6 +517,7 @@ footer .info section > img {
         display: flex;
         gap: 2rem;
         margin-top: 4rem;
+        overflow: auto;
     }
     
     .section3 ul li img {
@@ -529,7 +535,6 @@ footer .info section > img {
         align-items: center;
         justify-content: center;
         margin-top: 6rem;
-        width: 39rem;
     }
     
     .section4 a {
@@ -541,7 +546,7 @@ footer .info section > img {
         left: 10rem;
     }
     
-    .subscribe {
+    .subscribe .sub-container {
         width: 32.6rem;
         height: 34.8rem;
         border-radius: 3rem;
@@ -549,7 +554,6 @@ footer .info section > img {
         flex-direction: column;
         position: relative;
         margin-top: 5rem;
-        margin-left: 3.2rem;
         justify-content:flex-start;
     }
 
@@ -599,7 +603,6 @@ footer .info section > img {
     footer {
         position: relative;
         bottom: 7rem;
-        width: 39rem;
         height: 17.8rem;
     }
 
@@ -612,7 +615,6 @@ footer .info section > img {
     footer .info section:nth-child(1){
         display: flex;
         flex-direction: column;
-        width: 39rem;
         gap: 5.8rem;
         align-items: flex-start;
         margin-left: 2rem;
