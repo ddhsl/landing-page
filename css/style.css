@@ -44,7 +44,7 @@ body {
     display: flex;
     width: 192rem;
     height: 80rem;
-    background-image: url(./img/box-cat.png);
+    background-image: url(../img/box-cat.png);
     background-repeat: no-repeat;
     background-position: 118rem 13.4rem 
 }
@@ -125,7 +125,7 @@ header nav ul li a button {
     height: 39rem;
     border-radius: 3rem;
     box-shadow: 1rem 1rem 3rem 0 rgba(0, 0, 0, 25%);
-    background-image: url(./img/img_4.jpg);
+    background-image: url(../img/img_4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center -8rem;
@@ -248,7 +248,7 @@ header nav ul li a button {
 .subscribe input::placeholder {
     color: #767676;
     padding-left: 6.8rem ;
-    background-image: url(./img/mail.svg);
+    background-image: url(../img/mail.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 3rem center ;
@@ -273,7 +273,7 @@ header nav ul li a button {
     top: 244rem;
     z-index: -1;
     background-color: #F2E9D899;
-        background-image: url(./img/img_5.jpg);
+        background-image: url(../img/img_5.jpg);
     background-size: cover;
     background-position: right -60rem;
     opacity: 60%;
@@ -346,7 +346,7 @@ footer .info section > img {
     height: 40rem;
     border-radius: 3rem;
     box-shadow: 0 0 3rem 0  rgba(0, 0, 0, 20%);
-    background-image: url(./img/modal-bg-img.png);
+    background-image: url(../img/modal-bg-img.png);
     background-size: contain;
     display: flex;
     flex-direction: column;
@@ -400,7 +400,7 @@ footer .info section > img {
     .body-top {
         width: 39rem;
         height: 71.8rem;
-        background-image: url(./img/box-cat.png);
+        background-image: url(../img/box-cat.png);
         background-repeat: no-repeat;
         background-size: 19.7rem 42.2rem;
         background-position: 50% 120%;
